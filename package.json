@@ -1,0 +1,25 @@
+{
+  "name": "orientacao-objetos-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Pedro Martins - pedromartins@frwk.com.br",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "test": "jest --watchAll --coverage",
+    "generate": "ts-node src/gerador_arquivos.ts"
+  },
+  "devDependencies": {
+    "@types/faker": "5.5.3",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.7.10",
+    "faker": "5.5.3",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "email-validator": "^2.0.4"
+  }
+}

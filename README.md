@@ -1,0 +1,1 @@
+**PARA PREENCHER A PASTA "src/data", execute o comando yarn generate**
