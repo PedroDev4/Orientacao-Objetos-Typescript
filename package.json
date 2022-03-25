@@ -6,7 +6,7 @@
   "author": "Pedro Martins - pedromartins@frwk.com.br",
   "scripts": {
     "dev": "ts-node src/index.ts",
-    "test": "jest --watchAll --coverage",
+    "test": "jest",
     "generate": "ts-node src/gerador_arquivos.ts"
   },
   "devDependencies": {
@@ -20,6 +20,7 @@
     "typescript": "^4.4.2"
   },
   "dependencies": {
+    "csv-parse": "^4.15.3",
     "email-validator": "^2.0.4"
   }
 }

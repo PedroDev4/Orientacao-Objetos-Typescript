@@ -1,4 +1,4 @@
-import { ContaBancaria } from './models/ContaBancaria';
+import { ContaBancaria } from './model/entity/ContaBancaria';
 
 const conta1 = new ContaBancaria('12345-6', '0005-4');
 
