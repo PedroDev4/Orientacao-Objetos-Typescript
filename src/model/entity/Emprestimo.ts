@@ -23,6 +23,6 @@ export class Emprestimo extends Entity<EmprestimoProps> {
             id
         );
 
-        return emprestimo
+        return emprestimo;
     }
 }

@@ -1,15 +1,12 @@
-import path from "path";
 import { Contato } from "../entity/Contato";
-import { IContatoDao } from "./interfaces/IContatoDao";
 import fs from 'fs';
 import csvParse from 'csv-parse';
+import { ContatoDAO } from "../core/ContatoDAO";
 
-class ContatoCsvDao implements IContatoDao {
-
-    private _caminhoArquivo: string;
+class ContatoCsvDao extends ContatoDAO {
 
     constructor() {
-        this._caminhoArquivo = path.join(__dirname, '../', '../', 'data', 'contatos.csv');
+        super('contatos.csv');
     }
 
     async recuperarContatos(): Promise<Contato[]> {
@@ -18,7 +15,7 @@ class ContatoCsvDao implements IContatoDao {
 
     private parseCsv(): Promise<Contato[]> {
         return new Promise((resolve, reject) => {
-            const stream = fs.createReadStream(this._caminhoArquivo);
+            const stream = fs.createReadStream(this.caminhoArquivo);
 
             const contatos: Contato[] = [];
 
